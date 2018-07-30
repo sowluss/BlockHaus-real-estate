@@ -6,10 +6,13 @@
     box-sizing: border-box;
     }
 
+
+    html { overflow-y: scroll; 
+
+}
     body {
         overflow: hidden;
-        /* height: auto;
-        width: 100%; */
+        position: absolute; 
     }
 
     /* NAVIGATION / MENU */
@@ -80,22 +83,98 @@
 
 .content-wrapper {
     width: 100%;
+    position: relative;
 }
 
 .content-wrapper img {
     width: 100%; 
 }
 
-.text-wrapper {
-    position: relative;
-    margin: -30%;
+.content-wrapper .text-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    background-color: #0009;
+    transform: translate(-50%, -50%);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    /* border: 2px solid white; */
 }
 
-.text-wrapper h1 {
+.content-wrapper .text-wrapper h1 {
+    color: #fff;
+    font-size: 45px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
     text-align: center;
-    color: white;
-    font-size: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+
+/* PARALLAX */
+
+.img1 {
+    background-image: url('img/house.jpg');
+    min-height: 600px;
+}
+
+.img2 {
+    background-image: url('img/cottage.jpg');
+    min-height: 600px;
+}
+.img3 {
+    background-image: url('img/flat.jpg');
+    min-height: 600px;
+}
+
+.img1,
+.img2,
+.img3 {
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* 
+    fixed = parallax
+    scroll =  normal
+    */
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase; 
+    }
+    
+    .text .border {
+        background-color: #111;
+        color: #fff;
+        padding: 20px;
+    }
+
+    .section {
+        text-align: center;
+        padding: 40px 80px 40px 80px;
+        margin-bottom: 50px;
+    }
+
+    .section-dark  {
+        background-color: #282e34;
+        color: #ddd;
+    }
+
+    .main-cont {
+        padding: 25px 35px;
+        font-size: 20px;
+        text-align: justify;
+    }
 
 
 
