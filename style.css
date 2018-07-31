@@ -176,6 +176,97 @@
         text-align: justify;
     }
 
+    /* SEARCH BOX */
+
+#form-section {
+    width: 100%;
+    height: 200px;
+    background: #ccc;
+}
+
+.search {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    padding: 20px 0 20px 60px;
+    min-height: 60px;
+    width: 80%;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+.search .icon {
+    position: absolute; 
+    top: 25px;
+    left: 25px;
+    font-size: 30px;
+    color: #adadad;
+}
+
+.search .row {
+    display: flex;
+}
+
+.search .row .option {
+    flex: 1;
+    position: relative;
+    padding: 0;
+    /* width: 100%; */
+    border-right: 1px solid #ccc;
+}
+
+.search .row .option select {
+    position: relative;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    color: #848484;
+    padding: 10px 20px;
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    /* width: 100%;
+    border-right: 1px solid #ccc; */
+}
+
+.search .row .option:before {
+    content: '\f107';
+    font-family: fontAwesome;
+    position: absolute;
+    color: #848484;
+    right: 10px;
+    top: 15px;
+    font-size: 20px;
+}
+
+/* doesn't show the last arrow down in the row */
+.search .row .option:last-child:before {
+    display: none;
+}
+.search .row .option:last-child {
+    padding: 0 20px;
+    border-right: none;
+}
+.search .row .option input[type="submit"] {
+    border: none;
+    background: #c9d500;
+    color: #000;
+    height: 100%;
+    width: 100%; 
+    text-transform: uppercase;
+    outline: none;
+    font-size: 24px;
+}
+
+.search .row .option input[type="submit"]:hover {
+    background: #131f28;
+    color: white;
+
+}
+
+
+
 
 
 
@@ -211,6 +302,10 @@
             /* background:#22313F; */
             background: rgba(34, 49, 63, .8);
             /* background: rgba(0, 0, 0, .7); */
+        }
+
+        .text-wrapper {
+            display: none;
         }
     }
     
