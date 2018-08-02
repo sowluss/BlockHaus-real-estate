@@ -91,7 +91,7 @@ a.current {
     font-size: 40px;
 }
 
-/* Large House Image */
+/*  HOUSE IMAGE */
 
 .large-house-img {
     display: grid;
@@ -99,13 +99,14 @@ a.current {
     margin-top: 30px;
     width: 100%;
     justify-content: space-evenly;
-    
 }
 
 .large-house-img img {
     width: 70%;
     margin: 0 auto;
 }
+
+/* HOUSE DESCRIPTION */
 
 .house-desc {
     display: grid;
@@ -125,12 +126,41 @@ a.current {
     word-spacing: 5px;
 }
 
+/* HOUSE PICTURES */
+
 .house-pics {
     display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    margin-top: 30px;
-    width: 100%;
+    width: 72%;
+    grid-template-columns: 32% 32% 32%;
+    margin-top: 40px;
     justify-content: space-evenly;
+    margin: 60px auto 0 auto;
+}
+
+.house-pics img {
+    width: 100%;
+}
+
+/* HOUSE FEATURES */
+
+.feature-container {
+    display: grid;
+    width: 72%;
+    grid-template-columns: 32% 32% 32%;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    margin: 60px auto 0 auto;
+}
+
+.feature-items p {
+    font-size: 25px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 200;
+    word-spacing: 5px;
+}
+
+.feature-items p span {
+    font-style: italic;
 }
 
 /* FOOTER */
