@@ -91,48 +91,47 @@ a.current {
     font-size: 40px;
 }
 
-/* Row One */
+/* Large House Image */
 
-
-.houses-row-one {
+.large-house-img {
     display: grid;
-    grid-template-columns: 32% 32% 32%;
-    margin: 30px 0 auto;
-    width: 100%;
-    /* managed to center the row with: */
-    justify-content: space-evenly;
-   
-}
-
-/* Row Two */
-.houses-row-two {
-    display: grid;
-    grid-template-columns: 32% 32% 32%;
+    grid-template-columns: 100%;
     margin-top: 30px;
     width: 100%;
-    /* managed to center the row with: */
+    justify-content: space-evenly;
+    
+}
+
+.large-house-img img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.house-desc {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 30px;
+    width: 100%;
     justify-content: space-evenly;
 }
 
-.card {
-    margin-right: 10px;
-    background:#EAEAEA;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
-}
-.card-container {
-    text-align: center;
+.desc-text {
     font-size: 25px;
-    font-family: 'Quicksand', sans-serif;
-    padding-bottom: 20px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 200;
+    word-spacing: 5px;
 }
 
- h4 {
-  margin-bottom: 10px;
-  padding: 10px;
+.house-pics {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: space-evenly;
 }
-
- 
-
 
 /* FOOTER */
 
@@ -184,6 +183,7 @@ color: #c9d500;
     text-align: center;
     padding-top: 10px;
 }
+
 
 
 
