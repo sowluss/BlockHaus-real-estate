@@ -237,8 +237,6 @@ a.current {
     font-size: 20px;
 }
 
-/* doesn't show the last arrow down in the row */
-
 .search .row .option:last-child:before {
     display: none;
 }
@@ -304,8 +302,6 @@ a.current {
 .fa-google-plus-square:hover {
 color: #c9d500;
 }
-
-
 
 #copyright {
     height: 50px;

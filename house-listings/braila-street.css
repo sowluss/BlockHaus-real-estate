@@ -166,10 +166,10 @@ a.current {
 /* FOOTER */
 
 .footer {
-    background: #fff;
+    background: #F2F2F2;
     display: grid;
     grid-template-columns: 30% 70%;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .left-side {

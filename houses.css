@@ -114,6 +114,8 @@ a.current {
     justify-content: space-evenly;
 }
 
+/* Cards */
+
 .card {
     margin-right: 10px;
     background:#EAEAEA;
