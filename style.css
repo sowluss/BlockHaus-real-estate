@@ -157,10 +157,18 @@ a.current {
     color: #ddd;
 }
 
+.section-dark h1 {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+}
+
 .main-cont {
     padding: 15px 35px;
     font-size: 20px;
     text-align: justify;
+    font-family: 'Assistant', sans-serif;
+    word-spacing: 5px;
+    font-weight: 200;
 }
 
 /* SEARCH BOX */
@@ -257,7 +265,7 @@ a.current {
 /* FOOTER */
 
 .footer {
-    background: #fff;
+    background: #F2F2F2;
     display: grid;
     grid-template-columns: 30% 70%;
 }
