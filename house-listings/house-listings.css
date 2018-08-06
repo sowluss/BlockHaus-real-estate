@@ -139,7 +139,18 @@ a.current {
 
 .house-pics img {
     width: 100%;
+    filter: grayscale(100%);
+    transition: 1s;
 }
+
+.house-pics img:hover {
+    filter: grayscale(0);
+    transform: scale(1.04);
+}
+
+
+
+
 
 /* HOUSE FEATURES */
 

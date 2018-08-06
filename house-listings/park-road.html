@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BlocHaus | Park Road</title>
     <link rel="stylesheet" type="text/css" href="house-listings.css">
+    <link rel="stylesheet" type="text/css" href="/lightbox.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -39,9 +40,7 @@
                 <li>
                     <a href="cottages.html">Cottages</a>
                 </li>
-                <li>
-                    <a href="flats.html">Flats</a>
-                </li>
+
                 <li>
                     <a href="contacts.html">Contacts</a>
                 </li>
@@ -66,9 +65,9 @@
     </div>
 
     <div class="house-pics">
-        <img src="park-road_pic1.jpeg" alt="">
-        <img src="park-road_pic2.jpeg" alt="">
-        <img src="park-road_pic3.jpeg" alt="">
+        <a href="park-road_pic1.jpeg" data-lightbox="houses"><img src="park-road_pic1.jpeg" alt=""></a>
+        <a href="park-road_pic2.jpeg" data-lightbox="houses"><img src="park-road_pic2.jpeg" alt=""></a>
+        <a href="park-road_pic3.jpeg" data-lightbox="houses"><img src="park-road_pic3.jpeg" alt=""></a>
     </div>
 
 
@@ -115,17 +114,9 @@
 
         </div>
         <div class="right-side">
-            <div>
-                <p>Valnu iela 49, Riga 1050,
-                    <br> Latvia</p>
-            </div>
-            <div>
-                <p>Aia 18, 10111 Tallinn,
-                    <br>Estonia</p>
-            </div>
-            <div>
-                <p>Ąžuolyno g. 7, Vilnius 07171, Lithuania</p>
-            </div>
+                <div><p>49 Valnu Street, Riga 1050,<br>Latvia, +371 6 879283</p></div>
+                <div><p>18 Aia Street, Tallinn 10111,<br>Estonia, +372 246987</p></div>
+                <div><p>7 Oak Street 7, Vilnius 07171,<br>Lithuania, +370 5 235694</p></div>
         </div>
     </section>
 
@@ -135,6 +126,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="../script.js"></script>
+    <script src="/lightbox.js"></script>
 </body>
 
 </html>

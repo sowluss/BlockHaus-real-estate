@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BlocHaus | Braila Street</title>
     <link rel="stylesheet" type="text/css" href="house-listings.css">
+    <link rel="stylesheet" type="text/css" href="/lightbox.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -40,9 +41,6 @@
                     <a href="cottages.html">Cottages</a>
                 </li>
                 <li>
-                    <a href="flats.html">Flats</a>
-                </li>
-                <li>
                     <a href="contacts.html">Contacts</a>
                 </li>
             </ul>
@@ -69,11 +67,9 @@
     </div>
 
     <div class="house-pics">
-        <div>
-            <img src="braila_pic1.jpg" alt="">
-        </div>
-        <img src="braila_pic2.jpg" alt="">
-        <img src="braila_pic3.jpg" alt="">
+        <a href="braila_pic1.jpg" data-lightbox="houses"><img src="braila_pic1.jpg" alt=""></a>
+        <a href="braila_pic2.jpg" data-lightbox="houses"><img src="braila_pic2.jpg" alt=""></a>
+        <a href="braila_pic3.jpg" data-lightbox="houses"><img src="braila_pic3.jpg" alt=""></a>
     </div>
 
 
@@ -82,18 +78,24 @@
     <div class="feature-container">
 
         <div class="feature-items">
-            <p><span class="bold-item">Square Meters:</span> 100</p>
-            <p><span class="bold-item">Bedrooms:</span> 2</p>
+            <p>
+                <span class="bold-item">Square Meters:</span> 100</p>
+            <p>
+                <span class="bold-item">Bedrooms:</span> 2</p>
         </div>
 
         <div class="feature-items">
-            <p><span class="bold-item">Bathrooms:</span> 1</p>
-            <p><span class="bold-item">Basements:</span> 1</p>
+            <p>
+                <span class="bold-item">Bathrooms:</span> 1</p>
+            <p>
+                <span class="bold-item">Basements:</span> 1</p>
         </div>
 
         <div class="feature-items">
-            <p><span class="bold-item">Build Year:</span> 2015</p>
-            <p><span class="bold-item">Location:</span> Liepaja, Latvia</p>
+            <p>
+                <span class="bold-item">Build Year:</span> 2015</p>
+            <p>
+                <span class="bold-item">Location:</span> Liepaja, Latvia</p>
         </div>
 
     </div>
@@ -115,15 +117,16 @@
         </div>
         <div class="right-side">
             <div>
-                <p>Valnu iela 49, Riga 1050,
-                    <br> Latvia</p>
+                <p>49 Valnu Street, Riga 1050,
+                    <br>Latvia, +371 6 879283</p>
             </div>
             <div>
-                <p>Aia 18, 10111 Tallinn,
-                    <br>Estonia</p>
+                <p>18 Aia Street, Tallinn 10111,
+                    <br>Estonia, +372 246987</p>
             </div>
             <div>
-                <p>Ąžuolyno g. 7, Vilnius 07171, Lithuania</p>
+                <p>7 Oak Street 7, Vilnius 07171,
+                    <br>Lithuania, +370 5 235694</p>
             </div>
         </div>
     </section>
@@ -134,6 +137,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="../script.js"></script>
+    <script src="/lightbox.js"></script>
 </body>
 
 </html>
