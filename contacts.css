@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    text-decoration: none;
+    text-decoration: none !important;
     box-sizing: border-box;
 }
 
@@ -62,12 +62,11 @@ a.current {
 .toggle {
     display: none;
     position: absolute;
-    color: white;
     right: 35px;
     top: 63px;
     /* background: #131f28; */
     border: 1px solid #c9d500;
-    color: #c9d500;
+    color: #c9d500 !important;
     padding: 5px;
     cursor: pointer;
     font-family: 'Nunito', sans-serif;
@@ -142,6 +141,67 @@ textarea {
     font-size: 20px;
     cursor: pointer;
 }
+.button:hover {
+    background: #131f28;
+    color: white;
+}
+
+
+/* OUR TEAM */
+
+.member-bloc {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    margin-top: 40px;
+    width: 100%;
+    /* managed to center the row with: */
+    justify-content: space-evenly;
+}
+
+/* Cards */
+
+.contact-card {
+    /* transform: translate(-50%, -50%); */
+
+    left: 50%;
+    width: 360px;
+    height: 480px;
+    background: #22313F;
+}
+.contact-card .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contact-card .image img {
+    width: 100%;
+    transition: .5s;
+}
+
+.contact-card:hover .image img {
+    opacity: .5;
+    transform: translate(30%);
+}
+
+.social {
+    color: black;
+}
+.social:hover {
+    color: white;
+}
+
+.contact-card .card-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    
+}
+
+
+
 
 
 
