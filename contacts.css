@@ -131,7 +131,7 @@ textarea {
     height: 100px;
 }
 .button {
-    width: 100px;
+    width: 100%;
     background: #c9d500;
     border-radius: 0;
     border: none;
@@ -180,10 +180,18 @@ textarea {
     transition: 0.3s;
     width: 50%;
     margin: 0 auto;
+    background: #F2F2F2;
 }
 
 .member-card img {
     width: 100%;
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+.member-card img:hover {
+    filter: grayscale(0);
+    transform: scale(1.04);
 }
 
 .member-card:hover {
@@ -191,9 +199,10 @@ textarea {
 }
 
 .container {
-    padding: 2px 16px;
+    padding: 10px 16px;
+    margin-top: 10px;
+    text-align: center;
 }
-
 
 
 
