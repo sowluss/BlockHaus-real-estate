@@ -204,6 +204,16 @@ textarea {
     text-align: center;
 }
 
+.container ul li a {
+    color: #9C9C9C;
+    margin: 0 auto;
+}
+
+.container ul li a:hover {
+    background: transparent !important;
+    color: black;
+}
+
 
 
 
