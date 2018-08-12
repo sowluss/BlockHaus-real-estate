@@ -183,7 +183,20 @@ h4 {
 
 /* MEDIA QUERIES */
 
+/*  1400px */
+@media (max-width: 1400px) {
+    .right-side p {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .left-side {
+        margin: 70px auto;
+        font-size: 23px;
+    }
+}
 
+/* 1260px */
 @media (max-width: 1260px) {
 
     /* Header */
@@ -265,5 +278,14 @@ h4 {
         font-size: 20px;
         position: fixed;
         margin-top: 50px;
+    }
+}
+
+/* 600px */
+@media (max-width: 600px) {
+    .toggle {
+        display: block;
+        right: 20px;
+        top: 65px;
     }
 }

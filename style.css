@@ -56,7 +56,6 @@ ul li a {
 ul li a:hover {
     background: #131f28;
     color: #c9d500;
-    /* border-left: 2px solid #c9d500; */
 }
 
 a.current {
@@ -313,6 +312,24 @@ a.current {
 
 /* MEDIA QUERIES */
 
+/* 1400px */
+@media (max-width: 1400px) {
+    .right-side p {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .left-side {
+        margin: 70px auto;
+        font-size: 23px;
+    }
+    .section {
+        padding: 30px 40px;
+        height: 225px;
+    }
+}
+
+/* 1260 px */
 @media (max-width: 1260px) {
     .toggle {
         display: block;
@@ -335,9 +352,7 @@ a.current {
         display: block;
         text-align: center;
         color: #fff;
-        /* background:#22313F; */
         background: rgba(34, 49, 63, .8);
-        /* background: rgba(0, 0, 0, .7); */
     }
     .text-wrapper {
         display: none;
@@ -360,6 +375,9 @@ a.current {
         margin: 0;
         padding: 15px;
         background: white;
+    }
+    .search .row .option {
+        border-right: 0px solid #ccc;
     }
     .search .row .option select {
         font-size: 20px;
@@ -391,8 +409,7 @@ a.current {
     .section {
         text-align: center;
         padding: 30px 40px;
-        /* margin-bottom: 10px; */
-        height: 430px;
+        height: 300px;
     }
     .section-dark h1 {
         font-family: 'Assistant', sans-serif;
@@ -441,5 +458,22 @@ a.current {
         font-size: 20px;
         position: fixed;
         margin-top: 50px;
+    }
+}
+
+/* 600px */
+@media (max-width: 600px) {
+    .toggle {
+        display: block;
+        right: 20px;
+        top: 65px;
+    }
+    .section {
+        text-align: center;
+        padding: 25px 40px;
+        height: 460px;
+    }
+    .search .row .option {
+        border-right: 0px solid #ccc;
     }
 }
