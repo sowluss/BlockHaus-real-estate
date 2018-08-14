@@ -55,27 +55,25 @@
     </div>
 
 
+<!-- CONTACT FORM -->
 
     <div class="container-fluid">
         <div class="container">
+            <!-- Form submit alert message -->
+                <div class="alert">Your Message Has Been Sent</div>
             <div class="formBox">
-                <form>
-                    <!-- <div class="row"> -->
-                    <!-- <div class="col-sm-12">
-                              <h1>Contact Us</h1>
-                        </div> -->
-
+                <form id="contactForm">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="inputBox">
                                 <div class="inputText">First Name</div>
-                                <input type="text" name="" class="input">
+                                <input type="text" name="firstName" class="input" id="firstName" required>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="inputBox">
                                 <div class="inputText">Last Name</div>
-                                <input type="text" name="" class="input">
+                                <input type="text" name="lastName" class="input" id="lastName" required>
                             </div>
                         </div>
                     </div>
@@ -83,13 +81,13 @@
                         <div class="col-sm-6">
                             <div class="inputBox">
                                 <div class="inputText">Email</div>
-                                <input type="text" name="" class="input">
+                                <input type="email" name="email" class="input" id="email" required>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="inputBox">
-                                <div class="inputText">Mobile</div>
-                                <input type="text" name="" class="input">
+                                <div class="inputText">Mobile Number</div>
+                                <input type="text" name="mobile" class="input" id="mobile" required>
                             </div>
                         </div>
                     </div>
@@ -97,19 +95,19 @@
                         <div class="col-sm-6">
                             <div class="inputBox">
                                 <div class="inputText">Message</div>
-                                <textarea class="input"></textarea>
+                                <textarea class="input" id="message"></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="inputBox">
-                                <input type="submit" value="Send" class="button">
+                                <!-- value="Send"  -->
+                                <button type="submit">Submit</button>
+            
                             </div>
                         </div>
                     </div>
-
-
                 </form>
 
             </div>
@@ -173,7 +171,7 @@
               <p>Regional Manager</p> 
               <ul>
                 <li>
-                    <a href="">
+                    <a hr ef="">
                         <i class="fas fa-phone fa-lg"></i>
                     </a>
                 </li>
@@ -224,6 +222,7 @@
     </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
     <script src="script.js"></script>
 </body>
 
