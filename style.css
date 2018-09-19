@@ -21,7 +21,7 @@ section {
     position: relative;
     width: 100%;
     height: 175px;
-    background: #22313F;
+    background: #131f28;
 }
 
 header {
@@ -71,9 +71,15 @@ a.current {
     /* background: #131f28; */
     border: 1px solid #c9d500;
     color: #c9d500;
-    padding: 5px;
+    padding: 5px 10px;
     cursor: pointer;
     font-family: 'Nunito', sans-serif;
+}
+
+.toggle:hover {
+    color: white;
+    transition: .5s;
+    border: 1px solid #fff;
 }
 
 /* MAIN IMAGE */
@@ -152,7 +158,7 @@ a.current {
 .section-dark {
     background-color: #282e34;
     color: #ddd;
-    padding-bottom: 20px;
+    padding: 20px 10px;
 }
 
 .section-dark h1 {
@@ -221,8 +227,6 @@ a.current {
     -webkit-appearance: none;
     width: 100%;
     background: transparent;
-    /* width: 100%;
-    border-right: 1px solid #ccc; */
 }
 
 .search .row .option:before {
@@ -253,11 +257,13 @@ a.current {
     text-transform: uppercase;
     outline: none;
     font-size: 24px;
+   
 }
 
 .search .row .option input[type="submit"]:hover {
     background: #131f28;
     color: white;
+    transition: .5s;
 }
 
 /* FOOTER */
@@ -269,21 +275,23 @@ a.current {
 }
 
 .left-side {
-    margin-top: 45px;
+    margin-top: 55px;
     margin-left: 35px;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .right-side {
-    margin-top: 50px;
+    margin-top: 60px;
     font-size: 35px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
 
 .right-side p {
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Nunito', sans-serif;
+    text-align: right;
+    padding-right: 25px;
 }
 
 .fa-facebook-f,
@@ -299,12 +307,13 @@ a.current {
 .fa-linkedin-square:hover,
 .fa-google-plus-square:hover {
     color: #c9d500;
+    transition: .5s;
 }
 
 #copyright {
     height: 50px;
     color: lightslategray;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     padding-top: 10px;
@@ -312,12 +321,28 @@ a.current {
 
 /* MEDIA QUERIES */
 
-/* 1400px */
-@media (max-width: 1400px) {
+/* 1449px */
+@media (max-width: 1449px) {
+    .right-side p {
+        font-size: 20px;
+        text-align: right;
+        padding-right: 15px;
+        margin-top: 0;
+    }
+
+    .left-side {
+        font-size: 30px;
+        margin-top: 60px;
+    }
+
+}
+
+/* 1411px */
+@media (max-width: 1411px) {
     .right-side p {
         font-size: 20px;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 5px;
     }
     .left-side {
         margin: 70px auto;
@@ -329,15 +354,15 @@ a.current {
     }
 }
 
-/* 1260 px */
-@media (max-width: 1260px) {
+/* 1256 px */
+@media (max-width: 1256px) {
     .toggle {
         display: block;
     }
     header {
         height: 173px;
         padding: 0;
-        background: #22313F;
+        background: #131f28;
     }
     header ul {
         width: 100%;
@@ -409,39 +434,39 @@ a.current {
     .section {
         text-align: center;
         padding: 30px 40px;
-        height: 300px;
+        height: 250px;
     }
     .section-dark h1 {
         font-family: 'Assistant', sans-serif;
         font-weight: 400;
     }
     .main-cont {
-        padding: 20px 5px;
+        padding: 25px 5px;
         font-size: 20px;
         text-align: justify;
         font-family: 'Assistant', sans-serif;
         font-weight: 200;
     }
     /* Footer */
+    
     .footer {
         display: block;
         background: transparent;
+        margin-top: 70px;
+        height: 400px;
     }
+
     .right-side {
         display: block;
-    }
-    .footer {
-        margin-top: 80px;
-        height: 380px;
         text-align: center;
     }
+    
     .right-side p {
         font-size: 20px;
-        text-align: center;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .left-side {
-        margin: 0 auto;
+        text-align: center;
         font-size: 20px;
     }
     .fa-facebook-f,
@@ -461,6 +486,30 @@ a.current {
     }
 }
 
+/*** 964px ***/
+@media (max-width: 964px) {
+    .section {
+        height: 280px;
+    }
+
+}
+
+/*** 859px ***/
+@media (max-width: 859px) {
+    .section {
+        height: 320px;
+    }
+}
+
+
+/*** 694px ***/
+@media (max-width: 694px) {
+    .section {
+        height: 370px;
+    }
+}
+
+
 /* 600px */
 @media (max-width: 600px) {
     .toggle {
@@ -471,9 +520,44 @@ a.current {
     .section {
         text-align: center;
         padding: 25px 40px;
-        height: 460px;
+        height: 380px;
     }
     .search .row .option {
         border-right: 0px solid #ccc;
+    }
+}
+
+/*** 545px ***/
+@media (max-width: 545px) {
+    .section {
+        height: 430px;
+}
+}
+
+/*** 498px ***/
+@media (max-width: 498px) {
+    .section {
+        height: 460px;
+}
+}
+
+/*** 470px ***/
+@media (max-width: 470px) {
+    .section {
+        height: 490px;
+}
+}
+
+/*** 437px ***/
+@media (max-width: 437px) {
+    .section {
+        height: 530px;
+}
+}
+
+/*** 404px ***/
+@media (max-width: 404px) {
+    .section {
+        height: 550px;
     }
 }

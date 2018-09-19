@@ -56,7 +56,7 @@ function submitForm(e) {
         document.querySelector('.alert').style.display = 'none';
      }, 3000);
 
-    //   clear form
+    //   clear form after Sent message confirmes
      document.getElementById('contactForm').reset();
 }
 

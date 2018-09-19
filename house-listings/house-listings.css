@@ -16,7 +16,7 @@ section {
     position: relative;
     width: 100%;
     height: 175px;
-    background: #22313F;
+    background: #131f28;
 }
 
 header {
@@ -206,6 +206,7 @@ a.current {
 .fa-linkedin-square:hover,
 .fa-google-plus-square:hover {
     color: #c9d500;
+    transition: .5s;
 }
 
 #copyright {
@@ -240,7 +241,7 @@ a.current {
     header {
         height: 173px;
         padding: 0;
-        background: #22313F;
+        background: #131f28;
     }
     header ul {
         width: 100%;
