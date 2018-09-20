@@ -71,6 +71,12 @@ a.current {
     font-family: 'Nunito', sans-serif;
 }
 
+.toggle:hover {
+    color: white !important;
+    transition: .5s;
+    border: 1px solid #fff;
+}
+
 /* PAGE TITLE */
 
 .page-title {
@@ -157,9 +163,9 @@ transition: .5s;
 }
 
 .left-side {
-    margin-top: 45px;
+    margin-top: 50px;
     margin-left: 35px;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .right-side {
@@ -170,8 +176,10 @@ transition: .5s;
 }
 
 .right-side p {
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Nunito', sans-serif;
+    text-align: right;
+    padding-right: 25px;
 }
 
 .fa-facebook-f,
@@ -188,12 +196,13 @@ transition: .5s;
 .fa-google-plus-square:hover {
     color: #c9d500;
     transition: .5s;
+    cursor: pointer;
 }
 
 #copyright {
     height: 50px;
     color: lightslategray;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     padding-top: 10px;
@@ -201,15 +210,31 @@ transition: .5s;
 
 /* MEDIA QUERIES */
 
+/* 1449px */
+@media (max-width: 1449px) {
+    .right-side p {
+        font-size: 20px;
+        text-align: right;
+        padding-right: 15px;
+        margin-top: 0;
+    }
+
+    .left-side {
+        font-size: 25px;
+        
+    }
+
+}
+
 /*  1400px */
 @media (max-width: 1400px) {
     .right-side p {
         font-size: 20px;
-        text-align: center;
-        margin-top: 20px;
+        text-align: right;
+        margin-top: -5px;
     }
     .left-side {
-        margin: 70px auto;
+        margin: 50px auto;
         font-size: 23px;
     }
 }
@@ -261,17 +286,17 @@ transition: .5s;
 
 
     /* Footer */
+
     .footer {
         display: block;
         background: transparent;
-    }
-    .right-side {
-        display: block;
-    }
-    .footer {
         margin-top: 80px;
         height: 380px;
         text-align: center;
+    }
+    .right-side {
+        display: block;
+        margin-left: 15px;
     }
     .right-side p {
         font-size: 20px;
@@ -279,15 +304,16 @@ transition: .5s;
         margin-top: 20px;
     }
     .left-side {
-        margin: 0 auto;
+        text-align: center;
         font-size: 20px;
+        margin: 0 auto;
     }
     .fa-facebook-f,
     .fa-twitter-square,
     .fa-linkedin-square,
     .fa-google-plus-square {
         text-align: center;
-        margin-right: 1px;
+        margin-left: 10px;
     }
     #copyright {
         bottom: 0;

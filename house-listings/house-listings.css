@@ -71,6 +71,12 @@ a.current {
     font-family: 'Nunito', sans-serif;
 }
 
+.toggle:hover {
+    color: white;
+    transition: .5s;
+    border: 1px solid #fff;
+}
+
 /* PAGE TITLE */
 
 .page-title {
@@ -176,21 +182,22 @@ a.current {
 }
 
 .left-side {
-    margin-top: 45px;
+    margin-top: 60px;
     margin-left: 35px;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .right-side {
-    margin-top: 50px;
-    font-size: 35px;
+    margin-top: 60px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
 
 .right-side p {
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Nunito', sans-serif;
+    padding-right: 25px;
+    text-align: right;
 }
 
 .fa-facebook-f,
@@ -207,12 +214,13 @@ a.current {
 .fa-google-plus-square:hover {
     color: #c9d500;
     transition: .5s;
+    cursor: pointer;
 }
 
 #copyright {
     height: 50px;
     color: lightslategray;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     padding-top: 10px;
@@ -225,7 +233,7 @@ a.current {
     .right-side p {
         font-size: 20px;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 5px;
     }
     .left-side {
         margin: 70px auto;
@@ -300,34 +308,35 @@ a.current {
     .feature-items p span {
         font-style: italic;
     }
+
     /* Footer */
+
     .footer {
         display: block;
         background: transparent;
+        margin-top: 80px;
+        height: 380px;
     }
     .right-side {
         display: block;
-    }
-    .footer {
-        margin-top: 80px;
-        height: 380px;
         text-align: center;
+        margin-left: 15px;
     }
     .right-side p {
         font-size: 20px;
-        text-align: center;
         margin-top: 20px;
     }
     .left-side {
-        margin: 0 auto;
+        text-align: center;
         font-size: 20px;
+        margin: 0 auto;
     }
     .fa-facebook-f,
     .fa-twitter-square,
     .fa-linkedin-square,
     .fa-google-plus-square {
         text-align: center;
-        margin-right: 1px;
+        margin-left: 10px;
     }
     #copyright {
         bottom: 0;

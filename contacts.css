@@ -70,6 +70,12 @@ a.current {
     font-family: 'Nunito', sans-serif;
 }
 
+.toggle:hover {
+    color: white !important;
+    transition: .5s;
+    border: 1px solid #fff;
+}
+
 /* PAGE TITLE */
 
 .page-title {
@@ -203,7 +209,7 @@ button:hover {
 }
 
 .member-card h4 {
-    margin-top: 25px;
+    margin-top: 55px;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 24px;
 }
@@ -269,6 +275,7 @@ button:hover {
 .container ul li a:hover {
     background: transparent !important;
     color: black;
+    
 }
 
 /* FOOTER */
@@ -314,6 +321,7 @@ button:hover {
 .fa-google-plus-square:hover {
     color: #c9d500;
     transition: .5s;
+    cursor: pointer;
 }
 
 #copyright {
@@ -328,12 +336,42 @@ button:hover {
 
 /* MEDIA QUERIES */
 
+/* 1449px */
+@media (max-width: 1449px) {
+    .right-side p {
+        font-size: 20px;
+        text-align: right;
+        padding-right: 15px;
+        margin-top: 0;
+    }
+
+    .left-side {
+        font-size: 25px;
+        margin-top: 60px;
+    }
+}
+
+/* 1411px */
+@media (max-width: 1411px) {
+    .right-side p {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .left-side {
+        margin: 70px auto;
+        font-size: 23px;
+    }
+}
+
+
 /* 1400px */
 @media (max-width: 1400px) {
     .right-side p {
         font-size: 20px;
-        text-align: center;
-        margin-top: 20px;
+        text-align: right;
+        margin-top: 5px;
     }
 
     .left-side {
@@ -402,15 +440,8 @@ button:hover {
         filter: grayscale(0);
     }
 
-    .member-bloc {
-        display: block;
-        margin: 50px auto 0 auto;
-        width: 80%;
-        justify-content: space-evenly;
-    }
-
     .member-card {
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
 
     .member-card img:hover {
@@ -421,29 +452,20 @@ button:hover {
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
 
-    .container {
-        overflow: hidden;
-    }
-
-    .container ul {
-        width: 70%;
-    }
-
     /* Footer */
 
     .footer {
         display: block;
         background: transparent;
+        margin-top: 80px;
+        height: 460px;
+        text-align: center;
     }
 
     .right-side {
         display: block;
-    }
-
-    .footer {
-        margin-top: 80px;
-        height: 380px;
         text-align: center;
+        margin-left: 15px;
     }
 
     .right-side p {
@@ -452,8 +474,9 @@ button:hover {
     }
 
     .left-side {
-        margin: 0 auto;
+        text-align: center;
         font-size: 20px;
+        margin: 0 auto;
     }
 
     .fa-facebook-f,
@@ -461,7 +484,7 @@ button:hover {
     .fa-linkedin-square,
     .fa-google-plus-square {
         text-align: center;
-        margin-right: 1px;
+        margin-left: 10px;
     }
 
     #copyright {
@@ -475,35 +498,46 @@ button:hover {
 }
 
 
-/* MEDIA QUERIES */
+/*** 962 px ***/
+@media (max-width: 962px) {
+.member-card h4 {
+    font-size: 20px;
+}
 
-/* 1449px */
-@media (max-width: 1449px) {
-    .right-side p {
-        font-size: 20px;
-        text-align: right;
-        padding-right: 15px;
-        margin-top: 0;
+.member-card p {
+    font-size: 16px;
+}
+}
+
+/*** 849 px ***/
+@media (max-width: 849px) {
+    .member-card h4 {
+        font-size: 18px;
     }
-
-    .left-side {
-        font-size: 30px;
-        margin-top: 60px;
+    
+    .member-card p {
+        font-size: 14px;
     }
 }
 
-/* 1411px */
-@media (max-width: 1411px) {
-    .right-side p {
-        font-size: 20px;
-        text-align: center;
-        margin-top: 5px;
-    }
+/*** 849 px ***/
+@media (max-width: 801px) {
+.member-bloc {
+    display: block;
+}
 
-    .left-side {
-        margin: 70px auto;
-        font-size: 23px;
-    }
+.member-card {
+    margin-bottom: 25px;
+}
+
+.member-card h4 {
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+.member-card p {
+    font-size: 18px;
+}
 }
 
 

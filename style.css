@@ -137,6 +137,7 @@ a.current {
     text-transform: uppercase;
 }
 
+
 .text .border {
     background-color: #111;
     color: #fff;
@@ -264,6 +265,7 @@ a.current {
     background: #131f28;
     color: white;
     transition: .5s;
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -275,14 +277,13 @@ a.current {
 }
 
 .left-side {
-    margin-top: 55px;
+    margin-top: 60px;
     margin-left: 35px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .right-side {
     margin-top: 60px;
-    font-size: 35px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
@@ -308,6 +309,7 @@ a.current {
 .fa-google-plus-square:hover {
     color: #c9d500;
     transition: .5s;
+    cursor: pointer;
 }
 
 #copyright {
@@ -331,7 +333,7 @@ a.current {
     }
 
     .left-side {
-        font-size: 30px;
+        font-size: 25px;
         margin-top: 60px;
     }
 
@@ -459,22 +461,24 @@ a.current {
     .right-side {
         display: block;
         text-align: center;
+        margin-left: 15px;
     }
     
     .right-side p {
         font-size: 20px;
-        margin-top: 10px;
+        margin-top: 15px;
     }
     .left-side {
         text-align: center;
         font-size: 20px;
+        margin: 0 auto;
     }
     .fa-facebook-f,
     .fa-twitter-square,
     .fa-linkedin-square,
     .fa-google-plus-square {
         text-align: center;
-        margin-right: 1px;
+        margin-left: 10px;
     }
     #copyright {
         bottom: 0;
