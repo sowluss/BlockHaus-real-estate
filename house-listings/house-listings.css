@@ -235,6 +235,7 @@ a.current {
         text-align: center;
         margin-top: 5px;
     }
+
     .left-side {
         margin: 70px auto;
         font-size: 23px;
@@ -246,19 +247,23 @@ a.current {
     .toggle {
         display: block;
     }
+
     header {
         height: 173px;
         padding: 0;
         background: #131f28;
     }
+
     header ul {
         width: 100%;
         top: -2px;
         display: none;
     }
+
     header ul.active {
         display: block;
     }
+
     header ul li a {
         margin: 0;
         display: block;
@@ -266,38 +271,46 @@ a.current {
         color: #fff;
         background: rgba(34, 49, 63, .8);
     }
+
     .text-wrapper {
         display: none;
     }
+
     /* Page title */
     .page-title h2 {
         font-size: 30px;
     }
+
     /* House pictures */
     .house-pics {
         display: block;
         margin: 60px auto 20px auto;
     }
+
     .house-pics img {
         width: 100%;
         filter: grayscale(0);
         transition: none;
     }
+
     .house-pics img:hover {
         filter: grayscale(0);
         transform: scale(1);
     }
+
     /* House Description */
     .desc-text {
         font-size: 20px;
         width: 70%;
         word-spacing: 2px;
     }
+
     /* House Features */
     .feature-container {
         display: block;
         width: 50%;
     }
+
     .feature-items p {
         font-size: 20px;
         font-family: 'Assistant', sans-serif;
@@ -305,6 +318,7 @@ a.current {
         word-spacing: 5px;
         text-align: center;
     }
+
     .feature-items p span {
         font-style: italic;
     }
@@ -317,20 +331,24 @@ a.current {
         margin-top: 80px;
         height: 380px;
     }
+
     .right-side {
         display: block;
         text-align: center;
         margin-left: 15px;
     }
+
     .right-side p {
         font-size: 20px;
         margin-top: 20px;
     }
+
     .left-side {
         text-align: center;
         font-size: 20px;
         margin: 0 auto;
     }
+
     .fa-facebook-f,
     .fa-twitter-square,
     .fa-linkedin-square,
@@ -338,6 +356,7 @@ a.current {
         text-align: center;
         margin-left: 10px;
     }
+
     #copyright {
         bottom: 0;
         overflow: hidden;
@@ -348,6 +367,19 @@ a.current {
     }
 }
 
+/* 776px */
+@media (max-width: 776px) {
+
+    .large-house-img img {
+        -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+
+    }
+
+}
+
+
 /* 600px */
 @media (max-width: 600px) {
     .toggle {
@@ -355,6 +387,7 @@ a.current {
         right: 20px;
         top: 65px;
     }
+
     .feature-items p {
         text-align: center;
     }

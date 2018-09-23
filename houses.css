@@ -136,6 +136,7 @@ a.current {
     font-size: 25px;
     font-family: 'Quicksand', sans-serif;
     padding-bottom: 20px;
+    
 }
 
 h4 {
@@ -146,11 +147,13 @@ h4 {
 .card-container a {
     color: grey;
     font-size: 18px;
+    transition: color .5s;
     }
 
 .card-container a:hover {
 border-bottom: 1px solid #131f28;
-transition: .5s;
+color: #131f28;
+
 }
 
 /* FOOTER */
