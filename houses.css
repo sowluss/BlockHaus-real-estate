@@ -40,7 +40,7 @@ ul li a {
     position: relative;
     display: block;
     padding: 10px 20px;
-    margin: 55px 10px;
+    margin: 62px 10px;
     color: white;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
@@ -136,7 +136,6 @@ a.current {
     font-size: 25px;
     font-family: 'Quicksand', sans-serif;
     padding-bottom: 20px;
-    
 }
 
 h4 {
@@ -151,8 +150,8 @@ h4 {
     }
 
 .card-container a:hover {
-border-bottom: 1px solid #131f28;
-color: #131f28;
+    border-bottom: 1px solid #131f28;
+    color: #131f28;
 
 }
 
@@ -242,97 +241,7 @@ color: #131f28;
     }
 }
 
-/* 1260px */
-@media (max-width: 1260px) {
-
-    /* Header */
-    .toggle {
-        display: block;
-    }
-    header {
-        height: 173px;
-        padding: 0;
-        background: #131f28;
-    }
-    header ul {
-        width: 100%;
-        top: -2px;
-        display: none;
-    }
-    header ul.active {
-        display: block;
-    }
-    header ul li a {
-        margin: 0;
-        display: block;
-        text-align: center;
-        color: #fff;
-        /* background:#22313F; */
-        background: rgba(34, 49, 63, .8);
-        /* background: rgba(0, 0, 0, .7); */
-    }
-    .text-wrapper {
-        display: none;
-    }
-
-    /* House Cards */
-    .houses-row-one {
-        display: block;
-    }
-    .houses-row-two {
-        display: block;
-    }
-
-    .card {
-        margin: 0 auto 20px auto;
-    }
 
 
-    /* Footer */
 
-    .footer {
-        display: block;
-        background: transparent;
-        margin-top: 80px;
-        height: 380px;
-        text-align: center;
-    }
-    .right-side {
-        display: block;
-        margin-left: 15px;
-    }
-    .right-side p {
-        font-size: 20px;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .left-side {
-        text-align: center;
-        font-size: 20px;
-        margin: 0 auto;
-    }
-    .fa-facebook-f,
-    .fa-twitter-square,
-    .fa-linkedin-square,
-    .fa-google-plus-square {
-        text-align: center;
-        margin-left: 10px;
-    }
-    #copyright {
-        bottom: 0;
-        overflow: hidden;
-        width: 100%;
-        font-size: 20px;
-        position: fixed;
-        margin-top: 50px;
-    }
-}
 
-/* 600px */
-@media (max-width: 600px) {
-    .toggle {
-        display: block;
-        right: 20px;
-        top: 65px;
-    }
-}
