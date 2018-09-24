@@ -33,7 +33,6 @@ header {
 }
 
 ul {
-
     margin: 0;
     padding: 0;
     display: flex;
@@ -45,7 +44,7 @@ ul li a {
     position: relative;
     display: block;
     padding: 10px 20px;
-    margin: 62px 10px;
+    margin: 60px 10px;
     color: white;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
