@@ -10,6 +10,8 @@ html {
     overflow-y: scroll;
 }
 
+/* NAVIGATION / MENU */
+
 section {
     position: relative;
     width: 100%;
@@ -331,7 +333,62 @@ button:hover {
     bottom: 0;
 }
 
-/* MEDIA QUERIES */
+/**************************** MEDIA QUERIES ******************************/
+
+/* 1449px */
+@media (max-width: 1449px) {
+    .right-side p {
+        font-size: 20px;
+        text-align: right;
+        padding-right: 15px;
+        margin-top: 0;
+    }
+
+    .left-side {
+        font-size: 25px;
+        margin-top: 60px;
+    }
+}
+
+/* 1411px */
+@media (max-width: 1411px) {
+    .right-side p {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .left-side {
+        margin: 70px auto;
+        font-size: 23px;
+    }
+}
+
+
+/* 1400px */
+@media (max-width: 1400px) {
+    .right-side p {
+        font-size: 20px;
+        text-align: right;
+        margin-top: 5px;
+    }
+
+    .left-side {
+        margin: 70px auto;
+        font-size: 23px;
+    }
+
+    /* Member Cards */
+
+    .member-card img {
+        width: 100%;
+        filter: grayscale(0);
+    }
+
+    .container ul {
+        width: 80%;
+    }
+}
 
 /******************** 1256px **********************/
 
@@ -416,6 +473,7 @@ button:hover {
 } 
 }
 
+
 /******************** 1009px *******************/
 
 @media (max-width: 1009px) {
@@ -452,63 +510,7 @@ button:hover {
     }
 }
 
-/* 1449px */
-@media (max-width: 1449px) {
-    .right-side p {
-        font-size: 20px;
-        text-align: right;
-        padding-right: 15px;
-        margin-top: 0;
-    }
-
-    .left-side {
-        font-size: 25px;
-        margin-top: 60px;
-    }
-}
-
-/* 1411px */
-@media (max-width: 1411px) {
-    .right-side p {
-        font-size: 20px;
-        text-align: center;
-        margin-top: 5px;
-    }
-
-    .left-side {
-        margin: 70px auto;
-        font-size: 23px;
-    }
-}
-
-
-/* 1400px */
-@media (max-width: 1400px) {
-    .right-side p {
-        font-size: 20px;
-        text-align: right;
-        margin-top: 5px;
-    }
-
-    .left-side {
-        margin: 70px auto;
-        font-size: 23px;
-    }
-
-    /* Member Cards */
-
-    .member-card img {
-        width: 100%;
-        filter: grayscale(0);
-    }
-
-    .container ul {
-        width: 80%;
-    }
-}
-
-
-/*** 962 px ***/
+/*** 962 px***/
 @media (max-width: 962px) {
     .member-card h4 {
         font-size: 20px;
@@ -530,7 +532,7 @@ button:hover {
     }
 }
 
-/*** 849 px ***/
+/*** 801px ***/
 @media (max-width: 801px) {
     .member-bloc {
         display: block;
@@ -552,6 +554,7 @@ button:hover {
 
 /* 600px */
 @media (max-width: 600px) {
+
     .toggle {
         display: block;
         right: 20px;
@@ -568,4 +571,17 @@ button:hover {
         width: 85%;
     }
 
+}
+
+/*** 411px ***/
+@media (max-width: 411px) {
+
+    #logo img {
+        width: 60%;
+        margin-top: 30px;
+    }
+
+    .active {
+        margin-top: 27px !important;
+    }
 }
