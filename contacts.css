@@ -576,12 +576,59 @@ button:hover {
 /*** 411px ***/
 @media (max-width: 411px) {
 
-    #logo img {
+    header img {
         width: 60%;
         margin-top: 30px;
     }
 
+    .toggle {
+        margin-top: 5px;
+    }
+
     .active {
         margin-top: 27px !important;
+    }
+}
+
+/*** 375px ***/
+@media (max-width: 375px) {
+
+    .active {
+        margin-top: 32px !important;
+    }
+
+    header img {
+        margin-top: 40px;
+    }
+}
+
+
+/*** 360px ***/
+@media (max-width: 360px) {
+    header img {
+        width: 60%;
+        margin-top: 36px;
+    }
+
+    .active {
+        margin-top: 36px !important;
+    }
+
+}
+
+/*** 320px ***/
+@media (max-width: 320px) {
+
+    header img  {
+        margin-top: 43px !important;
+    }
+
+    .active {
+        margin-top: 38px !important;
+    }
+
+    .toggle {
+        margin-top: 5px;
+        margin-right: 5px;
     }
 }

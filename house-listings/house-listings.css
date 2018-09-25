@@ -226,9 +226,9 @@ a.current {
     padding-top: 10px;
 }
 
-/* MEDIA QUERIES */
+/**************************** MEDIA QUERIES ******************************** /
 
-/* 1400px */
+/***** 1400px ******/
 @media (max-width: 1400px) {
     .right-side p {
         font-size: 20px;
@@ -242,35 +242,34 @@ a.current {
     }
 }
 
-/* 1260px */
-@media (max-width: 1260px) {
-    .toggle {
+
+/***** 1256px ******/
+
+@media (max-width: 1256px) {
+
+    /* Header */
+    header ul {
+        margin: 10px auto;
+    }
+
+    .content-wrapper {
+        width: 100%;
+        height: 400px;
         display: block;
     }
 
     header {
-        height: 173px;
-        padding: 0;
-        background: #131f28;
+        padding: 0 20px;
     }
 
-    header ul {
-        width: 100%;
-        top: -2px;
-        display: none;
-    }
-
-    header ul.active {
-        display: block;
+    header ul li {
+        margin-right: 15px;
     }
 
     header ul li a {
-        margin: 0;
-        display: block;
-        text-align: center;
-        color: #fff;
-        background: rgba(34, 49, 63, .8);
+        font-size: 15px;
     }
+
 
     .text-wrapper {
         display: none;
@@ -281,11 +280,12 @@ a.current {
         font-size: 30px;
     }
 
-    /* House pictures */
-    .house-pics {
+    /* ------ House pictures ------ */
+
+    /* .house-pics {
         display: block;
         margin: 60px auto 20px auto;
-    }
+    } */
 
     .house-pics img {
         width: 100%;
@@ -306,47 +306,42 @@ a.current {
     }
 
     /* House Features */
-    .feature-container {
-        display: block;
-        width: 50%;
+     
+    .feature-items {
+        margin: 0 auto;
     }
 
     .feature-items p {
         font-size: 20px;
-        font-family: 'Assistant', sans-serif;
-        font-weight: 200;
-        word-spacing: 5px;
-        text-align: center;
-    }
-
-    .feature-items p span {
-        font-style: italic;
+        text-align: left;
     }
 
     /* Footer */
 
     .footer {
-        display: block;
-        background: transparent;
-        margin-top: 80px;
-        height: 380px;
-    }
-
-    .right-side {
-        display: block;
-        text-align: center;
-        margin-left: 15px;
-    }
-
-    .right-side p {
-        font-size: 20px;
-        margin-top: 20px;
+        background: #F2F2F2;
+        display: grid;
+        grid-template-columns: 30% 70%;
     }
 
     .left-side {
-        text-align: center;
-        font-size: 20px;
-        margin: 0 auto;
+        margin-top: 40px;
+        margin-left: 35px;
+        font-size: 25px;
+    }
+
+    .right-side {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .right-side p {
+        margin-top: 5px;
+        font-size: 18px;
+        font-family: 'Nunito', sans-serif;
+        text-align: left;
+        padding-right: 25px;
     }
 
     .fa-facebook-f,
@@ -366,6 +361,86 @@ a.current {
         margin-top: 50px;
     }
 }
+
+/**** 1100px ***/
+
+@media (max-width: 1100px) {
+    .footer {
+        display: block;
+        background: transparent;
+        margin-top: 70px;
+        height: 400px;
+    }
+
+    .right-side {
+        display: block;
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .right-side p {
+        font-size: 20px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .left-side {
+        text-align: center;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1009px) {
+
+    .toggle {
+        display: block;
+        margin-top: 10px;
+    }
+
+    header {
+        height: 173px;
+        padding: 0;
+        background: #131f28;
+    }
+
+    header ul {
+        width: 100%;
+        top: -2px;
+        display: none;
+    }
+
+    header ul.active {
+        display: block;
+        margin-top: 0;
+    }
+
+    header ul.active li {
+        width: 100%;
+    }
+
+    header ul li a {
+        margin: 0;
+        display: block;
+        text-align: center;
+        color: #fff;
+        background: rgba(34, 49, 63, .8);
+    }
+
+ /* House Features */
+    .feature-items {
+        text-align: center;
+    }
+    .feature-items p {
+        font-size: 18px;
+        text-align: left;
+    }
+}
+
+/* 26 Sep stopped here */
+
+
+
 
 /* 776px */
 @media (max-width: 776px) {
