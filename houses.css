@@ -118,6 +118,10 @@ a.current {
 
 /* Cards */
 
+.tablet-container {
+    display: none;
+}
+
 .card {
     margin-right: 10px;
     background: #EAEAEA;
@@ -138,7 +142,7 @@ a.current {
     padding-bottom: 20px;
 }
 
-h4 {
+.card-container h4 {
     margin-bottom: 10px;
     padding: 10px;
 }
@@ -223,9 +227,7 @@ h4 {
 
     .left-side {
         font-size: 25px;
-        
     }
-
 }
 
 /*  1400px */
